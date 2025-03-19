@@ -280,14 +280,10 @@
         <button class="next-button" onclick="goToNextPage()">Let's Go! ✨</button>
     </div>
 
-    <div class="audio-controls">
-        <button id="play-pause"><i class="play-icon">▶️</i></button>
-        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5">
-    </div>
-
-    <audio id="birthday-song" loop>
-        <source src="https://pagallworld.co.in/wp-content/uploads/2023/06/I-Wish-U-Happy-Happy-Birthday.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
+    <audio class="song" loop autoplay>
+        <source src="https://pagallworld.co.in/wp-content/uploads/2023/12/Tera-Birthday.mp3">
+        </source>
+        Your browser isn't invited for super fun audio time.
     </audio>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
