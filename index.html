@@ -275,7 +275,7 @@
             <div class="subtitle typewriter-text">
                 Hey Bestie! Ready for your special surprise? Click to continue!
                 <span class="cursor"></span>
-
+        
             </div>
         </div>
         
@@ -286,8 +286,15 @@
     <script>
 
 
-    
-        
+        // Set initial volume
+        audio.volume = volumeControl.value;
+
+       
+
+        // Volume control
+        volumeControl.addEventListener('input', () => {
+            audio.volume = volumeControl.value;
+        });
 
         // Function to go to next page
         function goToNextPage() {
